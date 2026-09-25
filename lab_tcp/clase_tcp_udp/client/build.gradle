@@ -1,0 +1,17 @@
+apply plugin: 'application'
+
+application {
+    mainClassName = 'co.icesi.buscaminas.client.MainClient'
+}
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'co.icesi.buscaminas.client.MainClient'
+        )
+    }
+}
+
+run {
+    standardInput = System.in
+}
